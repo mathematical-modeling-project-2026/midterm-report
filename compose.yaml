@@ -1,0 +1,9 @@
+services:
+  latex:
+    # TeX Live 2025 の凍結スナップショット。タグを変えるときはグループ全員に周知すること
+    image: texlive/texlive:TL2025-historic
+    working_dir: /workdir
+    volumes:
+      - .:/workdir
+    environment:
+      TZ: Asia/Tokyo

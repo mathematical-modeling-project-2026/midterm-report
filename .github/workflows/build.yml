@@ -1,0 +1,22 @@
+name: Build PDF
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: texlive/texlive:TL2025-historic
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build PDF
+        run: latexmk main.tex
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: midterm-report-pdf
+          path: main.pdf
+          if-no-files-found: error

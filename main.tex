@@ -1,0 +1,118 @@
+% プロジェクト学習グループ報告書テンプレート ver.1.1 (utf-8)
+
+% 両面印刷する場合は `openany' を削除する
+\documentclass[openany,11pt,papersize,dvipdfm]{jsbook}
+
+% 報告書提出用スタイルファイル
+\usepackage[middle]{funpro-2026}%中間報告書
+%\usepackage[final]{funpro-2026}%最終報告書
+
+% 画像ファイル (EPS, EPDF, PNG) を読み込むために
+\usepackage{graphicx}
+
+\def\hissu{\bgroup\color{red}}
+\def\endhissu{\egroup}
+
+% ここから -->
+%\usepackage{calc,ifthen}
+%\newcounter{hoge}
+%\newcommand{\fake}[1]{\whiledo{\thehoge<70}{#1\stepcounter{hoge}}%
+%  \setcounter{hoge}{0}}
+% <-- ここまで 削除してもよい
+
+% 年度の指定
+\thisYear{2026}
+
+% プロジェクト名
+\jProjectName{数理モデリングプロジェクト}
+
+% [簡易版のプロジェクト名]{正式なプロジェクト名}
+% 欧文のプロジェクト名が極端に長い（2行を超える）場合は、短い記述を
+% 任意引数として渡す。
+%\eProjectName[Making Delicious curry]{How to make delicious curry of Hakodate}
+\eProjectName{Mathematical Modeling Project}
+
+% <プロジェクト番号>
+\ProjectNumber{15}
+
+% グループ名
+\jGroupName{グループ~A}
+\eGroupName{Group~A}
+
+% プロジェクトリーダ      注意：学籍番号不用
+\ProjectLeader{藤井優気}{Yuki~Fujii}
+
+% グループリーダ      注意：学籍番号不用
+\GroupLeader  {未来太郎}{Taro~Mirai}
+
+% メンバー数
+\SumOfMembers{9}
+% グループメンバ      注意：学籍番号不用
+\GroupMember  {1}{小山内漣}{Ren~Osanai}
+\GroupMember  {2}{佐々木出}{Izuru~Sasaki}
+\GroupMember  {3}{成田吏希}{Riki~Narita}
+\GroupMember  {4}{西島暖華}{Nonoka~Nishizima}
+\GroupMember  {5}{野澤遼大}{Ryouta~Nozawa}
+\GroupMember  {6}{藤井優気}{Yuki~Fujii}
+\GroupMember  {7}{本光世奈}{Sena~Motomitsu}
+\GroupMember  {8}{石原達弥}{Tatsuya~Ishihara}
+\GroupMember  {9}{山本貫太}{Kanta~Yamamoto}
+
+% 指導教員
+\jadvisor{田中吉太郎,寺井あすか,石尾隆,加納剛史,Hamid~Hamidani}
+% 複数人数いる場合はカンマ(,)で区切る。カンマの前後に空白は入れない。
+\eadvisor{Yoshitarou~Tanaka,Asuka~Terai,Takashi~Ishio,Takeshi~Kano,Hamid~Hamidani}
+
+% 論文提出日
+\jdate{2026年7月DD日}
+\edate{Jul.~DD, 2026}
+
+\begin{document}
+\maketitle
+
+%======================================================================
+%前付け
+\frontmatter
+
+% 和文概要
+\begin{jabstract} 
+日本語の概要を書く。
+% 和文キーワード
+\begin{jkeyword}
+キーワード１， キーワード２，……
+\end{jkeyword}
+\end{jabstract}
+
+%英語の概要
+\begin{eabstract} Abstract in English. 
+% 英文キーワード
+\begin{ekeyword}
+Keyrods1, Keyword2, ...
+\end{ekeyword}
+\end{eabstract}
+
+\tableofcontents% 目次
+
+%========= 本文 ===========
+%各章の.texファイルをここに並べる
+%ファイル名の「.tex」は省略して良い
+\mainmatter
+\include{chapter1}
+\include{chapter2}
+\include{chapter3}
+\include{chapter4}
+\include{chapter5}
+
+%========= 参考文献 ===========
+\begin{thebibliography}{9}
+\bibitem{book1} R. S. Sutton and A. G. Barto, Reinforcement Learning, MIT Press, USA, 1998.
+\bibitem{paper1} A. J. Smith and K. Taro, ``The applications of the self-organising map to reinforcement learning," Neural Networks archive, vol. 15, Issue 8-9 , pp. 1107--1124,  Oct. 2002.
+\end{thebibliography}
+
+%========= 付録 ===========
+\begin{appendix}
+\include{appendix1}
+\include{appendix2}
+\end{appendix}
+
+\end{document}
