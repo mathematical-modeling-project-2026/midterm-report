@@ -36,8 +36,12 @@ make watch   # 保存するたびに自動再ビルド。Ctrl+C で終了
 
 ### ③ ビルドしない人（内容確認・校正だけしたい人）
 
-GitHub の **Actions タブ → 最新の実行 → Artifacts → `midterm-report-pdf`**
-から常に最新のPDFをダウンロードできます。環境構築は不要です。
+最新のPDFはブラウザでそのまま見られます（main に push されるたびに自動更新）：
+
+**https://mathematical-modeling-project-2026.github.io/midterm-report/**
+
+ダウンロードしたい場合は GitHub の **Actions タブ → 最新の実行 → Artifacts → `midterm-report-pdf`**
+からも取得できます。環境構築は不要です。
 
 ## コマンド一覧
 
