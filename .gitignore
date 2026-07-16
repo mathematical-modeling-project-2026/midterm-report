@@ -15,6 +15,7 @@
 *.fdb_latexmk
 *.synctex.gz
 *.synctex(busy)
+*.xbb
 main.pdf
 
 # 提出用アーカイブ
