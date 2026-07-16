@@ -22,3 +22,8 @@ main.pdf
 
 # OS・エディタ
 .DS_Store
+
+# Core dump files
+core
+core.*
+*.core
