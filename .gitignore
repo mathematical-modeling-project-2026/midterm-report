@@ -15,6 +15,7 @@
 *.fdb_latexmk
 *.synctex.gz
 *.synctex(busy)
+*.xbb
 main.pdf
 
 # 提出用アーカイブ
@@ -22,3 +23,8 @@ main.pdf
 
 # OS・エディタ
 .DS_Store
+
+# Core dump files
+core
+core.*
+*.core
