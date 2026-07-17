@@ -12,6 +12,8 @@
 
 % 数式環境
 \usepackage{amsmath}
+\usepackage{url}
+\usepackage{float}
 
 \def\hissu{\bgroup\color{red}}
 \def\endhissu{\egroup}
@@ -46,7 +48,7 @@
 \ProjectLeader{藤井優気}{Yuki~Fujii}
 
 % グループリーダ      注意：学籍番号不用
-\GroupLeader  {未来太郎}{Taro~Mirai}
+% \GroupLeader  {未来太郎}{Taro~Mirai}% 本プロジェクトではグループ分けなしのため未使用
 
 % メンバー数
 \SumOfMembers{9}
@@ -92,8 +94,8 @@
 \end{jabstract}
 
 %英語の概要
-\begin{eabstract}
-This project aims to propose feasible bus operation methods that mitigate congestion on the route buses serving Future University Hakodate by means of mathematical modeling. During commuting hours, passengers tend to concentrate on particular buses, which may lead to crowded vehicles, passengers unable to board the buses they wish to take, and delays in operation. Since constraints such as a shortage of drivers and operating costs make it unrealistic to rely solely on increasing the number of buses, we examined ways to improve transport efficiency while utilizing the existing vehicles and drivers.
+\begin{eabstract}\setlength{\parindent}{1zw}%
+\hspace{1zw}This project aims to propose feasible bus operation methods that mitigate congestion on the route buses serving Future University Hakodate by means of mathematical modeling. During commuting hours, passengers tend to concentrate on particular buses, which may lead to crowded vehicles, passengers unable to board the buses they wish to take, and delays in operation. Since constraints such as a shortage of drivers and operating costs make it unrealistic to rely solely on increasing the number of buses, we examined ways to improve transport efficiency while utilizing the existing vehicles and drivers.
 
 In the first semester, we held reading seminars using textbooks to acquire fundamental knowledge of mathematical modeling and numerical methods. We then compared several possible solutions for mitigating the congestion of the buses serving the university. As a result, we selected a plan in which some buses are operated as rapid services, and the time saved is used to operate the same vehicle again on the section between the Kameda-shisho-mae stop and the university, as the subject of further verification. In addition, we conducted preliminary investigations, such as counting the number of passengers boarding and alighting, and visualizing bus operations based on timetables.
 
@@ -120,12 +122,12 @@ mathematical modeling, route bus, congestion mitigation, rapid bus service, tran
 
 %========= 参考文献 ===========
 \begin{thebibliography}{9}
-\bibitem{ref:mlit} 国土交通省，『「交通空白」解消に向けた取組方針2026』，2026．
-\bibitem{ref:hakodate-plan} 函館市，『函館市地域公共交通計画』，2024．
-\bibitem{ref:fun-access} 公立はこだて未来大学，「アクセス」．% TODO: URLと閲覧日を記入
+\bibitem{ref:mlit} 国土交通省，『「交通空白」解消に向けた取組方針2026』，2026．[Online]. Available: \url{https://www.mlit.go.jp/sogoseisaku/transport/content/002005758.pdf}. [Accessed: Jul.~17, 2026].
+\bibitem{ref:hakodate-plan} 函館市，『函館市地域公共交通計画』，2024．[Online]. Available: \url{https://www.city.hakodate.hokkaido.jp/docs/2024020700137/}. [Accessed: Jul.~17, 2026].
+\bibitem{ref:fun-access} 公立はこだて未来大学，「アクセス」．[Online]. Available: \url{https://www.fun.ac.jp/access}. [Accessed: Jul.~17, 2026].
 \bibitem{ref:takayama1998} 高山純一，宮崎耕輔，塩土圭介，「快速バスを導入した最適バス路線網計画に関する研究」，土木計画学研究・論文集，Vol.15，pp.679--688，1998．
 \bibitem{ref:takayama1996} 高山純一，塩土圭介，「金沢市における通勤快速バス運行の事前・事後分析に関する研究」，都市計画論文集，Vol.31，pp.439--444，1996．
-\bibitem{book:mathmodel} 江崎貴裕，『データ分析のための数理モデル入門---本質をとらえた分析のために』，ソシム，2020．% 要確認: issue#10では2026とあったが初版は2020のはず．奥付を確認
+\bibitem{book:mathmodel} 江崎貴裕，『データ分析のための数理モデル入門---本質をとらえた分析のために』，ソシム，2026．
 \bibitem{book:pynum} 橋本修，毛塚敦，『Pythonによる数値計算法の基礎』，森北出版，2021．
 \end{thebibliography}
 

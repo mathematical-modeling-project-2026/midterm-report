@@ -311,6 +311,15 @@
      Group~Number\space\@ProjectNumber}%
   \let\@evenfoot\@oddfoot
 }
+\def\frontmatter{%
+  \if@openright
+    \cleardoublepage
+  \else
+    \clearpage
+  \fi
+  \@mainmatterfalse
+  \pagenumbering{roman}%
+}
 \def\mainmatter{%
   \if@openright
     \cleardoublepage
