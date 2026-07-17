@@ -323,9 +323,9 @@
 }
 \pagestyle{plainfront}
 \def\bunseki#1{%
-  \begin{flushright}%
-    \mbox{（※文責:~#1）}%
-\end{flushright}}%
+  \par\nobreak\vskip.8\baselineskip
+  \nobreak\noindent\hfill\mbox{（※文責:~#1）}\par
+  \vskip.3\baselineskip}%
 \newcommand{\qu}[1]{`#1'}
 \newcommand{\qq}[1]{``#1''}
 \newcommand{\yo}[1]{「#1」}
